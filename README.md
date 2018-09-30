@@ -90,7 +90,7 @@ optional arguments:
 
 ### Example
 ```shell
-$ ./transcode.py C:\Users\Phil\Music\Lossless -o C:\Users\Phil\Music\Lossy -s flac -t opus -r
+$ .\transcode.py C:\Users\Phil\Music\Lossless -o C:\Users\Phil\Music\Lossy -s flac -t opus -r
 ```
 > Note: This transcodes all **FLAC** files from **C:\Users\Phil\Music\Lossless** (including files from subfolders) to **opus** files, placing them in **C:\Users\Phil\Music\Lossy** while replicating the original folder structure.
 
