@@ -92,7 +92,7 @@ optional arguments:
 ```shell
 $ ./transcode.py C:\Users\Phil\Music\Lossless -o C:\Users\Phil\Music\Lossy -s flac -t opus -r
 ```
-This transcodes all **FLAC** files from **C:\Users\Phil\Music\Lossless** (including files from subfolders) to **opus** files, placing them in **C:\Users\Phil\Music\Lossy** while replicating the original folder structure.
+> Note: This transcodes all **FLAC** files from **C:\Users\Phil\Music\Lossless** (including files from subfolders) to **opus** files, placing them in **C:\Users\Phil\Music\Lossy** while replicating the original folder structure.
 
 ## Versioning
 We use [Semantic Versioning 2.0.0](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/PhilippKranz/audio-transcoder/tags).
