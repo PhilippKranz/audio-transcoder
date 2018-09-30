@@ -42,7 +42,7 @@ neroAacTag  | 1.5.1.0               | [nero.com](https://web.archive.org/web/201
     > Note: If you get permission errors you might have to use `sudo`.
 
 3. Install `flac` and `opus-tools` with a packet manager
-    ```bash
+    ```shell
     $ apt install flac opus-tools    # Debian, Ubuntu, etc. with APT
     $ yum install flac opus-tools    # Fedora, RHEL, CentOS, etc. with yum
     $ zypper install flac opus-tools # openSUSE, SLES, etc. with ZYpp
@@ -59,6 +59,40 @@ neroAacTag  | 1.5.1.0               | [nero.com](https://web.archive.org/web/201
 3. Navigate to `./bin` and execute the file [download_binaries.py](bin/download_binaries.py)
 
 4. Done
+
+## Using the Program
+Invoke [transcode.py](transcode.py) from the command line and use the following arguments.
+
+### Arguments
+```
+positional arguments:
+  inpath                file or folder to transcode
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -o OUTFOLDER, --outfolder OUTFOLDER
+                        target folder for the transcoded files
+  -q {0-100}, --encoding_quality {0-100}
+                        quality setting for the encoder
+  -r, --recursive       convert files from subfolders
+  -f, --force_overwrite
+                        force overwrite of existing files
+  -i, --copy_image      copy the embeded (cover) image file
+  -s {flac,wave}, --source_format {flac,wave}
+                        filename extension of the source file
+  -t {opus,aac,flac,wave}, --target_format {opus,aac,flac,wave}
+                        filename extension of the target file
+  --max_threads {1-64}  maximum number of threads
+  --silent              suppress output
+  --verbose             output detailed information
+  --version             show program's version number and exit
+```
+
+### Example
+```shell
+$ ./transcode.py C:\Users\Phil\Music\Lossless -o C:\Users\Phil\Music\Lossy -s flac -t opus -r
+```
+This transcodes all **FLAC** files from **C:\Users\Phil\Music\Lossless** (including files from subfolders) to **opus** files, placing them in **C:\Users\Phil\Music\Lossy** while replicating the original folder structure.
 
 ## Versioning
 We use [Semantic Versioning 2.0.0](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/PhilippKranz/audio-transcoder/tags).
