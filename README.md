@@ -18,7 +18,7 @@ This program is written for *Python 3.7.0* and above.
 > ``` 
 
 #### Additional Programs
-The following programs mast be present in order to use the `audio-transcoder`.
+The following programs must be present in order to use `audio-transcoder`.
 
 Program name | Recommended version   | Link | Available for
 ------------|-----------------------|------|--------------
