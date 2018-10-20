@@ -21,7 +21,7 @@ NERO_VERSION = '1.5.1'
 NERO_PLATFORM = 'win32'
 NERO_MEMBERS_TEMPLATE = ['{platform}/neroAacEnc.exe', '{platform}/neroAacTag.exe']
 OPUS_URL_TEMPLATE = 'https://archive.mozilla.org/pub/opus/{platform}/opus-tools-{version}-{platform}.zip'
-OPUS_VERSION = '0.2'
+OPUS_VERSION = '0.2-opus-1.3'
 OPUS_PLATFORM = 'win64'
 OPUS_MEMBERS_TEMPLATE = ['opusenc.exe']
 
