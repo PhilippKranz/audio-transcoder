@@ -20,13 +20,13 @@ This program is written for *Python 3.7.0* and above.
 #### Additional Programs
 The following programs must be present in order to use `audio-transcoder`.
 
-Program name | Recommended version   | Link | Available for
-------------|-----------------------|------|--------------
-flac        | 1.3.2                 | [xiph.org](https://xiph.org/flac/download.html) | Windows, GNU/Linux, macOS
-metaflac    | 1.3.2                 | [xiph.org](https://xiph.org/flac/download.html) | Windows, GNU/Linux, macOS
-opusenc     | 0.2                   | [opus-codec.org](https://opus-codec.org/downloads/) | Windows, GNU/Linux, macOS
-neroAacEnc  | 1.5.4.0               | [nero.com](https://web.archive.org/web/20170610150750/http://ftp6.nero.com/tools/NeroAACCodec-1.5.1.zip) | Windows
-neroAacTag  | 1.5.1.0               | [nero.com](https://web.archive.org/web/20170610150750/http://ftp6.nero.com/tools/NeroAACCodec-1.5.1.zip) | Windows
+Program name | Recommended version | Link | Available for
+-------------|---------------------|------|--------------
+flac         | 1.3.2               | [xiph.org](https://xiph.org/flac/download.html) | Windows, GNU/Linux, macOS
+metaflac     | 1.3.2               | [xiph.org](https://xiph.org/flac/download.html) | Windows, GNU/Linux, macOS
+opusenc      | 0.2                 | [opus-codec.org](https://opus-codec.org/downloads/) | Windows, GNU/Linux, macOS
+neroAacEnc   | 1.5.4.0             | [nero.com](https://web.archive.org/web/20170610150750/http://ftp6.nero.com/tools/NeroAACCodec-1.5.1.zip) | Windows
+neroAacTag   | 1.5.1.0             | [nero.com](https://web.archive.org/web/20170610150750/http://ftp6.nero.com/tools/NeroAACCodec-1.5.1.zip) | Windows
 
 > Note: Please read the section on [installing](###Installing) to learn how to easily get these programs.
 
