@@ -1,20 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Transcode files from FLAC/WAVE to Opus/AAC/FLAC/WAVE
-
-# Binaries needed in "./bin"-folder:
-    - flac        1.3.2
-    - metaflac    1.3.2
-    - neroAacEnc  1.5.4.0
-    - neroAacTag  1.5.1.0
-    - opusenc     0.2
-
-# Available at:
-    - https://xiph.org/flac/download.html
-    - https://opus-codec.org/downloads/
-    - https://web.archive.org/web/20170610150750/http://ftp6.nero.com/tools/NeroAACCodec-1.5.1.zip
-
+Transcode files from FLAC/WAVE to Opus/AAC/FLAC/WAVE while preserving the folder structure
 """
 
 # Versioning according to Semantic Versioning 2.0.0 (https://semver.org/)
