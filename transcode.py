@@ -36,10 +36,13 @@ class TranscodeJob:
         self.inpath = pathlib.Path(inpath)
         self.outfolder = pathlib.Path(outfolder)
 
+        # Expand user if necessary and resolve full path
+        self.inpath = self.inpath.expanduser().resolve()
+        self.outfolder = self.outfolder.expanduser().resolve()
+
         # Check if inpath exists
         if not self.inpath.exists():
             raise FileNotFoundError('Input path does not exist')
-        self.inpath = self.inpath.expanduser().resolve() # Expand user if necessary and resolve full path
 
         # Check if output-folder exists and create if necessary
         if not self.outfolder.exists():
@@ -48,7 +51,6 @@ class TranscodeJob:
         # Check if outfolder is a directory
         if not self.outfolder.is_dir():
             raise Exception('Output folder is invalid')
-        self.outfolder = self.outfolder.expanduser().resolve() # Expand user if necessary and resolve full path
 
         # Check input values
         if encoding_quality < 0 or encoding_quality > 100:
